@@ -50,7 +50,7 @@ jobs:
         with:
           file: Dockerfile
           platforms: linux/amd64,linux/arm64
-          push: true
+          push: false
           tags: |
             ${{ env.DOCKERHUB_USERNAME }}/actions-runner-controller:canary
           cache-from: type=gha,scope=arc-canary
